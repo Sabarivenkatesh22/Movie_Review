@@ -9,7 +9,7 @@ env.config();
 
 module.exports = class Email {
   constructor(user, url) {
-    this.to = "124003251@sastra.ac.in";
+    this.to = user.email;
     this.firstName = user.firstname;
     this.url = url || null;
     this.from = `Sabari DCS_Demo <${process.env.EMAIL_FROM}>`;
